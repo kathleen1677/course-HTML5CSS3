@@ -4,12 +4,15 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-.header__wrapper{
+.container{
+    margin: 0 auto;
     width: 1140px;
+
+}
+.header__wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
     padding-top: 25px;
 }
 .header{
@@ -29,9 +32,6 @@ body{
     margin-bottom: 40px;
     font-size: 60px;
 }
-.header__list-item::before{
-    content: url('../images/Vector.png');
-}
 .header__list-item:not(:last-of-type){
     margin-bottom: 10px;
 }
@@ -40,7 +40,6 @@ body{
     color: #445161;
 }
 .info__wrapper{
-    width: 1140px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto 50px;
@@ -48,7 +47,7 @@ body{
 }
 .info__text{
 }
-.info__img{
+.info__video{
     display: block;
     width: 430px;
     height: 245px;
@@ -69,8 +68,6 @@ body{
     background-color: #F5F5F5;
 }
 .pluses__wrapper{
-    width: 1140px;
-    margin: 0 auto;
     padding-top: 25px;
     
 }
@@ -118,8 +115,6 @@ body{
 }
 .scrinshots__wrapper{
     padding-top: 25px;
-    width: 1140px;
-    margin: 0 auto;
 }
 .scrinshots__image{
     width: 200px;
@@ -165,21 +160,34 @@ body{
 }
 .review__wrapper{
     padding-top: 25px;
-    width: 1140px;
-    margin: 0 auto;
 }
 .review__prth{
-    width: 480px;
+    width: 470px;
     height: 120px;
     background-color: #EBEBEB;
     margin-bottom: 40px;
     padding-top: 15px;
     padding-left: 15px;
 }
-
+.review__svg{
+    margin-right: 25px;
+}
+.review__paragrath-svg{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.review__svg-pointer{
+    position: absolute;
+    top: 40px;
+    left: 75px;
+}
 .review__columns{
     display: flex;
     justify-content: space-between;
+}
+.review__column-1{
+    margin-right: 20px;
 }
 .review__prth-1{
     margin-bottom: 20px;
@@ -190,8 +198,6 @@ body{
 }
 .cards__wrapper{
     padding-top: 45px;
-    width: 1140px;
-    margin: 0 auto;
 }
 .cards__tittle{
     color: #445161;
@@ -227,35 +233,35 @@ body{
     display: flex;
     align-items: center; 
     justify-content: center;
-    height: 70px;
+    padding-top: 25px;
+    padding-bottom: 16px;
+    margin-bottom: 10px;
 }
 .cards__list{
-    padding: 10px 20px 20px 10px;
+    padding: 0 15px 20px 23px;
     font-size: 14px;
     line-height: 24px;
 }
-.cards__button-wrapper{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
 .cards__button{
     width: 250px;
-    height: 45px;
+    padding-top: 16px;
+    padding-bottom: 9px;
     font-weight: bold;
     font-size: 18px;
     background: #FFFFFF;
     border: 0;
     border-radius: 8px;
+    text-align: center;
+    display: block;
+    margin: 0 auto 20px;
 }
 .footer{
-    background: #445162;
-    color: #FFFFFF;
+    
 }
 .footer_wrapper{
-    width: 1140px;
-    margin: 0 auto;
     padding-top: 25px;
+    background: #445162;
+    color: #FFFFFF;
 }
 .footer__header{
     font-size: 30px;
@@ -267,39 +273,41 @@ body{
     display: flex;
     justify-content: row;
 }
-.footer__form-wrapper{
+.footer__form{
     display: flex;
     flex-direction: column;
     margin-left: 150px;
     margin-right: 45px;
 }
 .footer__input{
-    width: 503px;
-    height: 45px;
+    width: 500px;
+    padding: 12px;
+    padding-bottom: 7px;
     margin-bottom: 20px;
     border: 0;
     border-radius: 8px;
+    display: block;
 }
 .footer__input-text{
-    width: 503px;
-    height: 180px;
+    width: 500px;
+    padding: 12px 11px;
     margin-bottom: 20px;
     border: 0;
     border-radius: 8px;
-}
-.footer__button-wrapper{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    display: block;
+    resize: none;
 }
 .footer__button{
     width: 145px;
-    height: 45px;
+    padding-top: 12px;
+    padding-bottom: 7px;
     font-size: 18px;
     background: #FFFFFF;
     color: #445162;
     border: 0;
     border-radius: 8px;
+    display: block;
+    margin: 0 auto 50px;
 }
 .footer__contact{
     display: flex;
@@ -307,9 +315,15 @@ body{
     line-height: 24px;
     margin-bottom: 20px;
 }
+.footer__last-contact{
+    margin-bottom: 50px;
+}
 .footer_rights{
     display: flex;
     justify-content: center;
+    background: #F5F5F5;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .footer__mail{
     text-decoration: none;
